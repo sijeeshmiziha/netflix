@@ -1,0 +1,249 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+.navbar--scrolled {
+  background-color: #141414;
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.navbar__logoBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.navbar__logo {
+  width: 92px;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5em;
+}
+
+.navbar__link {
+  color: #e5e5e5;
+  font-size: 0.9rem;
+  cursor: default;
+  transition: color 0.2s;
+}
+
+.navbar__link--btn {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navbar__link--btn:hover,
+.navbar__link:hover {
+  color: #b3b3b3;
+}
+
+.navbar__link--active {
+  color: #fff;
+  font-weight: 500;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.navbar__iconBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar__iconBtn:hover {
+  color: #b3b3b3;
+}
+
+.navbar__profileWrap {
+  position: relative;
+}
+
+.navbar__avatarBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navbar__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.navbar__dropdownBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.navbar__dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 180px;
+  background: rgba(0, 0, 0, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 8px 0;
+  z-index: 101;
+  animation: navbarDropdownIn 0.2s ease-out;
+}
+
+@keyframes navbarDropdownIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar__dropdownArrow {
+  position: absolute;
+  top: -6px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.9);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  transform: rotate(45deg);
+}
+
+.navbar__dropdownItem {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.navbar__dropdownItem:hover {
+  text-decoration: underline;
+}
+
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar__hamburgerBar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+}
+
+.navbar__mobileMenu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar__links {
+    display: none;
+  }
+  .navbar__hamburger {
+    display: flex;
+  }
+  .navbar__logo {
+    width: 80px;
+  }
+  .navbar__mobileMenu {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #141414;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 102;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+  }
+
+  .navbar__mobileMenu--open {
+    max-height: 320px;
+    opacity: 1;
+  }
+  .navbar__mobileMenuItem {
+    width: 100%;
+    padding: 12px 4%;
+    background: none;
+    border: none;
+    color: #e5e5e5;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+  }
+  .navbar__mobileMenuItem:hover,
+  .navbar__mobileMenuItem--active {
+    color: #fff;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 3%;
+  }
+}
