@@ -1,0 +1,253 @@
+.movieCard {
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: visible;
+  transition: transform 0.3s ease, z-index 0s;
+}
+
+.movieCard--hover {
+  transform: scale(1.1);
+  z-index: 10;
+  transition: transform 0.3s ease, z-index 0s;
+  will-change: transform;
+}
+
+.movieCard--hover .movieCard__clickable {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.movieCard__clickable {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.movieCard__img,
+.movieCard__placeholder {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.movieCard__placeholder {
+  background: #333;
+}
+
+.movieCard:not(.movieCard--small) .movieCard__clickable {
+  width: 250px;
+  height: 140px;
+}
+
+.movieCard:not(.movieCard--small) .movieCard__img,
+.movieCard:not(.movieCard--small) .movieCard__placeholder {
+  width: 250px;
+  height: 140px;
+}
+
+.movieCard--small .movieCard__clickable {
+  width: 180px;
+  height: 100px;
+}
+
+.movieCard--small .movieCard__img,
+.movieCard--small .movieCard__placeholder {
+  width: 180px;
+  height: 100px;
+}
+
+.movieCard .movieCard__clickable .tmdbImage__img {
+  transition: transform 0.35s ease, opacity 0.2s ease;
+}
+
+.movieCard:hover .movieCard__clickable .tmdbImage__img {
+  transform: scale(1.08);
+}
+
+.movieCard__titleBelow {
+  display: none;
+}
+
+.movieCard__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, transparent 40%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.75em;
+}
+
+.movieCard:hover .movieCard__overlay {
+  opacity: 1;
+}
+
+.movieCard__match {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  font-size: 0.75rem;
+  color: #46d369;
+  font-weight: 600;
+}
+
+.movieCard__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.5em;
+  flex-wrap: wrap;
+}
+
+.movieCard__actionBtn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.movieCard__actionBtn:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.movieCard__actionBtn--play {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #fff;
+  color: #000;
+}
+
+.movieCard__actionBtn--play:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.movieCard__actionBtn--play svg {
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+}
+
+.movieCard__actionBtn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.movieCard__title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.movieCard--small .movieCard__overlay {
+  padding: 0.4em;
+}
+
+.movieCard--small .movieCard__actions {
+  margin-bottom: 0.25em;
+}
+
+.movieCard--small .movieCard__actionBtn {
+  width: 28px;
+  height: 28px;
+}
+
+.movieCard--small .movieCard__actionBtn--play {
+  width: 32px;
+  height: 32px;
+}
+
+.movieCard--small .movieCard__actionBtn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.movieCard--small .movieCard__actionBtn--play svg {
+  width: 16px;
+  height: 16px;
+}
+
+.movieCard--small .movieCard__title {
+  font-size: 0.75rem;
+}
+
+.movieCard--small .movieCard__match {
+  display: none;
+}
+
+.movieCard--small .movieCard__actionBtn--like,
+.movieCard--small .movieCard__actionBtn--dislike,
+.movieCard--small .movieCard__actionBtn--info {
+  display: none;
+}
+
+/* Mobile: title below card, hide hover-only controls */
+@media (max-width: 768px) {
+  .movieCard--hover {
+    transform: none;
+  }
+
+  .movieCard__titleBelow {
+    display: block;
+    margin-top: 0.35em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #e5e5e5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .movieCard__actions {
+    display: none;
+  }
+
+  .movieCard:not(.movieCard--small) .movieCard__clickable,
+  .movieCard:not(.movieCard--small) .movieCard__img,
+  .movieCard:not(.movieCard--small) .movieCard__placeholder {
+    width: 160px;
+    height: 90px;
+  }
+
+  .movieCard--small .movieCard__clickable,
+  .movieCard--small .movieCard__img,
+  .movieCard--small .movieCard__placeholder {
+    width: 140px;
+    height: 78px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movieCard:not(.movieCard--small) .movieCard__clickable,
+  .movieCard:not(.movieCard--small) .movieCard__img,
+  .movieCard:not(.movieCard--small) .movieCard__placeholder {
+    width: 140px;
+    height: 79px;
+  }
+
+  .movieCard--small .movieCard__clickable,
+  .movieCard--small .movieCard__img,
+  .movieCard--small .movieCard__placeholder {
+    width: 120px;
+    height: 68px;
+  }
+}
