@@ -1,0 +1,138 @@
+.rowPost {
+  position: relative;
+  margin-top: 2em;
+  margin-left: 4%;
+  margin-right: 4%;
+  color: #fff;
+}
+
+.rowPost__title {
+  font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+  font-weight: 600;
+  margin-bottom: 0.25em;
+}
+
+.rowPost__sliderWrap {
+  position: relative;
+  padding: 0.5em 0 1.5em;
+}
+
+.rowPost__posters {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 0.5rem;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.25em 0;
+}
+
+.rowPost__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.rowPost__posters {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.rowPost__posters .movieCard {
+  flex-shrink: 0;
+}
+
+.rowPost__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.rowPost__arrow--visible {
+  opacity: 1;
+}
+
+.rowPost__arrow {
+  will-change: opacity;
+}
+
+.rowPost__arrow:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.rowPost__arrow--left {
+  left: 0;
+}
+
+.rowPost__arrow--right {
+  right: 0;
+}
+
+.rowPost__close {
+  position: relative;
+  left: 3%;
+  margin-bottom: 1em;
+  cursor: pointer;
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+.rowPost__close:hover {
+  opacity: 0.8;
+}
+
+.rowPost__close--hidden {
+  display: none;
+}
+
+.rowPost__close img {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+.rowPost__trailer {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .rowPost {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1.5em;
+  }
+  .rowPost__posters {
+    gap: 0.4rem;
+    padding: 0.2em 0 1em;
+  }
+  .rowPost__arrow {
+    width: 36px;
+    height: 36px;
+  }
+  .rowPost__arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rowPost__arrow {
+    width: 32px;
+    height: 32px;
+  }
+  .rowPost__arrow svg {
+    width: 18px;
+    height: 18px;
+  }
+}
