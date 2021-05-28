@@ -1,0 +1,7 @@
+.browseLayout {
+  min-height: 100vh;
+  background: var(--color-bg, #141414);
+  color: var(--color-text, #fff);
+  display: flex;
+  flex-direction: column;
+}
