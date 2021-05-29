@@ -1,0 +1,96 @@
+.infoLayout {
+  min-height: 100vh;
+  background: var(--color-bg, #141414);
+  color: var(--color-text, #fff);
+  display: flex;
+  flex-direction: column;
+}
+
+.infoLayout__content {
+  flex: 1;
+  padding: 100px 4% 3em;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.infoLayout__title {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  margin-bottom: 1.5em;
+  color: #fff;
+}
+
+.infoLayout__section {
+  margin-bottom: 2em;
+}
+
+.infoLayout__sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+  color: #fff;
+}
+
+.infoLayout__text {
+  color: #b3b3b3;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.infoLayout__text:last-child {
+  margin-bottom: 0;
+}
+
+.infoLayout__list {
+  margin: 0.5em 0 1em 1.25em;
+  color: #b3b3b3;
+  line-height: 1.7;
+}
+
+.infoLayout__list li {
+  margin-bottom: 0.5em;
+}
+
+/* Legacy: info pages pass children with infoPage__* classes */
+.infoPage__section {
+  margin-bottom: 2em;
+}
+.infoPage__sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+  color: #fff;
+}
+.infoPage__text {
+  color: #b3b3b3;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+.infoPage__text:last-child {
+  margin-bottom: 0;
+}
+.infoPage__list {
+  margin: 0.5em 0 1em 1.25em;
+  color: #b3b3b3;
+  line-height: 1.7;
+}
+.infoPage__list li {
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .infoLayout__content {
+    padding: 92px 4% 2.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .infoLayout__content {
+    padding: 88px 3% 2em;
+  }
+  .infoLayout__title {
+    font-size: 1.5rem;
+  }
+}
