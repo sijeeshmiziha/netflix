@@ -1,0 +1,152 @@
+.profileScreen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #141414;
+}
+
+.profileScreen__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 3%;
+}
+
+.profileScreen__logo {
+  width: 90px;
+  object-fit: contain;
+}
+
+.profileScreen__title {
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+
+.profileScreen__profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.profileScreen__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+  font: inherit;
+}
+
+.profileScreen__profile img {
+  width: 10vw;
+  min-width: 84px;
+  max-width: 150px;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  transition: border-color 0.25s ease;
+}
+
+.profileScreen__profile:hover img {
+  border-color: #fff;
+}
+
+.profileScreen__profile span {
+  margin-top: 1em;
+  font-size: clamp(0.9rem, 1.3vw, 1.25rem);
+  color: #808080;
+  transition: color 0.25s ease;
+}
+
+.profileScreen__profile:hover span {
+  color: #fff;
+}
+
+.profileScreen__manageBtn {
+  margin-top: 2.5em;
+  padding: 0.5em 1.5em;
+  background: transparent;
+  border: 1px solid #808080;
+  color: #808080;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.profileScreen__manageBtn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.profileScreen__addProfile img {
+  display: none;
+}
+
+.profileScreen__addProfile {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  width: 10vw;
+  min-width: 84px;
+  max-width: 150px;
+  aspect-ratio: 1;
+  justify-content: center;
+}
+
+.profileScreen__addIcon {
+  font-size: 4em;
+  line-height: 1;
+  margin-top: 0;
+  color: grey;
+}
+
+.profileScreen__addProfile:hover .profileScreen__addIcon,
+.profileScreen__addProfile:hover span {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .profileScreen__title {
+    font-size: 2rem;
+    margin-bottom: 1.75em;
+  }
+  .profileScreen__profiles {
+    gap: 1.75em;
+  }
+  .profileScreen__manageBtn {
+    margin-top: 2em;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profileScreen__profiles {
+    gap: 1.5em;
+  }
+  .profileScreen__profile img {
+    width: 25vw;
+    min-width: 70px;
+    max-width: 100px;
+  }
+  .profileScreen__addProfile {
+    width: 25vw;
+    min-width: 70px;
+    max-width: 100px;
+  }
+  .profileScreen__title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5em;
+  }
+  .profileScreen__profile span {
+    font-size: 0.85rem;
+  }
+}
