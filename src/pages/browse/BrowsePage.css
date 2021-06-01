@@ -1,0 +1,20 @@
+.browseScreen {
+  min-height: 100vh;
+  background: #141414;
+}
+
+.browseScreen__rows {
+  padding-bottom: 4em;
+}
+
+@media (max-width: 768px) {
+  .browseScreen__rows {
+    padding-bottom: 3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .browseScreen__rows {
+    padding-bottom: 2em;
+  }
+}
