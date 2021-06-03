@@ -1,0 +1,26 @@
+.show-trailer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.show-trailer__wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.show-trailer__wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .show-trailer {
+    max-width: 100%;
+  }
+}
