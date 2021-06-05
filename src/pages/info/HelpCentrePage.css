@@ -1,0 +1,119 @@
+.helpCentre__search {
+  margin-bottom: 2em;
+}
+
+.helpCentre__searchLabel {
+  display: block;
+  font-size: 0.95rem;
+  color: #b3b3b3;
+  margin-bottom: 0.5em;
+}
+
+.helpCentre__searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  background: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.helpCentre__searchInput::placeholder {
+  color: #808080;
+}
+
+.helpCentre__searchInput:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.helpCentre__quickLinks {
+  margin-bottom: 2em;
+}
+
+.helpCentre__quickList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.helpCentre__quickList li {
+  margin-bottom: 0.5em;
+}
+
+.helpCentre__quickLink,
+.helpCentre__phone {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.helpCentre__quickLink:hover,
+.helpCentre__phone:hover {
+  text-decoration: underline;
+}
+
+.helpCentre__faq {
+  margin-bottom: 2em;
+}
+
+.helpCentre__faqSection {
+  margin-bottom: 1.5em;
+}
+
+.helpCentre__faqSectionTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.75em;
+}
+
+.helpCentre__faqItem {
+  border-bottom: 1px solid #333;
+}
+
+.helpCentre__faqQuestion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.helpCentre__faqQuestion:hover {
+  color: #e50914;
+}
+
+.helpCentre__faqIcon {
+  font-size: 1.5rem;
+  color: #808080;
+  flex-shrink: 0;
+  margin-left: 1em;
+}
+
+.helpCentre__faqAnswer {
+  padding: 0 0 1em 0;
+  color: #b3b3b3;
+  line-height: 1.6;
+}
+
+.helpCentre__faqAnswer p {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .helpCentre__searchInput {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+  .helpCentre__faqQuestion {
+    font-size: 0.95rem;
+  }
+}
