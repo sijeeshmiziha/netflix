@@ -1,0 +1,139 @@
+.myListScreen {
+  min-height: 100vh;
+  background: #141414;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.myListScreen__header {
+  padding: 100px 4% 1.5em;
+}
+
+.myListScreen__back {
+  padding: 8px 16px;
+  margin-bottom: 1em;
+  font-size: 0.95rem;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.myListScreen__back:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.myListScreen__title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  margin: 0;
+}
+
+.myListScreen__content {
+  flex: 1;
+  padding: 0 4% 4em;
+}
+
+@media (max-width: 768px) {
+  .myListScreen__header {
+    padding: 90px 3% 1.25em;
+  }
+  .myListScreen__grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 180px));
+  }
+}
+
+.myListScreen__empty {
+  text-align: center;
+  padding: 4em 2em;
+  color: #808080;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.myListScreen__empty p {
+  margin: 0 0 0.5em;
+}
+
+.myListScreen__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+  gap: 1.5em;
+}
+
+.myListScreen__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.myListScreen__cardImgWrap {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.myListScreen__cardImgWrap .myListScreen__cardImg {
+  width: 100%;
+  aspect-ratio: 2/3;
+  min-height: 0;
+}
+
+.myListScreen__cardImgWrap .tmdbImage__img {
+  transition: transform 0.2s;
+}
+
+.myListScreen__cardImgWrap:hover .tmdbImage__img {
+  transform: scale(1.05);
+}
+
+.myListScreen__cardInfo {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+.myListScreen__cardTitle {
+  font-size: 0.95rem;
+  color: #e5e5e5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.myListScreen__remove {
+  flex-shrink: 0;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.myListScreen__remove:hover {
+  background: #e50914;
+}
+
+@media (max-width: 480px) {
+  .myListScreen__header {
+    padding: 80px 3% 1em;
+  }
+  .myListScreen__grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 160px));
+    gap: 1em;
+  }
+  .myListScreen__cardTitle {
+    font-size: 0.85rem;
+  }
+}
