@@ -1,0 +1,31 @@
+.mediaCentre__list {
+  list-style: none;
+  margin: 0.5em 0 0;
+  padding: 0;
+}
+
+.mediaCentre__listItem {
+  padding: 0.75em 0;
+  border-bottom: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.mediaCentre__date {
+  font-size: 0.85rem;
+  color: #808080;
+}
+
+.mediaCentre__title {
+  color: #b3b3b3;
+}
+
+.mediaCentre__link {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.mediaCentre__link:hover {
+  text-decoration: underline;
+}
