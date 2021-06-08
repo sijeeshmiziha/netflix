@@ -1,0 +1,8 @@
+.audioDesc__link {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.audioDesc__link:hover {
+  text-decoration: underline;
+}

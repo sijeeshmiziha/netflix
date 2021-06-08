@@ -1,0 +1,15 @@
+.audioSubtitles__subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 1em 0 0.5em;
+}
+
+.audioSubtitles__link {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.audioSubtitles__link:hover {
+  text-decoration: underline;
+}
