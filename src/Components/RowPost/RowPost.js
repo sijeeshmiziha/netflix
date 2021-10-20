@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "../../axios/axios";
-import { imageUrl, baseUrl, API_KEY } from "../constants/constants";
+import { imageUrl, baseUrl, API_KEY } from "../../constants/constants";
 import close from "./red-x.svg";
 import "./RowPost.css";
 import ShowTrailer from "../ShowTrailer/ShowTrailer";

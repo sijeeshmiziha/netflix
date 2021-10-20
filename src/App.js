@@ -9,7 +9,7 @@ import {
   horror,
   originals,
   romance,
-} from "./Components/constants/urls";
+} from "./constants/urls";
 
 function App() {
   return (
