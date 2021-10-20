@@ -1,0 +1,60 @@
+.row{
+    margin-left: 20px;
+    color: #fff;
+}
+
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y:hidden ;
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+
+.poster{
+    max-height: 250px;
+    margin-right: 10px;
+    cursor: pointer;    
+
+}
+.small-poster{
+    max-height: 100px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.poster:hover{
+    transform: scale(1.1);
+}
+.small-poster:hover{
+    transform: scale(1.1);
+}
+
+.show-container{
+    height: 100%;
+    
+    width: 100%;
+}
+
+/* .show-trailer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+} */
+.close-icon{
+    position:relative;
+    left: 3%;
+    margin-bottom: 1em;
+}
+
+.close-icon img{
+    width: 25px;
+    height: 25px;
+}
+.hide-icon{
+    display: none;
+}
