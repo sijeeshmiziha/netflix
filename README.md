@@ -11,12 +11,12 @@ Sijeesh Miziha's Netflix Clone is bundled with remarkable features that are of t
   - If You supporting me., then I can also create the full lecture video from the scratch..,you can learn React.js as beginer 
 - **Requirements to fork this repo**
    - Basic understanding of React js
-   
+
+![Screenshot from 2021-10-29 11-00-26](https://user-images.githubusercontent.com/91063960/139381648-76a0d2e5-9375-4f5a-8399-030888d8065e.png)
+![Screenshot from 2021-10-29 11-02-48](https://user-images.githubusercontent.com/91063960/139381555-95df7728-6b7e-4776-95e0-8c47192cdef2.png)
+![Screenshot from 2021-10-29 11-04-14](https://user-images.githubusercontent.com/91063960/139381568-ac4cd0ed-161d-4e22-9ab3-06268e579e50.png)
 
 
-![sijeeshmiziha-netflix-clone](https://user-images.githubusercontent.com/91063960/139377875-bec0798b-973e-4dc0-bab7-a745b7ba3bcf.png)
-![sijeeshmiziha-netflix-clone2](https://user-images.githubusercontent.com/91063960/139377889-6f5b23ac-4e9a-4674-b879-de472243599c.png)
-![sijeeshmiziha-netflix-clone3](https://user-images.githubusercontent.com/91063960/139377892-c501b7cf-cfcc-49be-948c-973e87cbda4b.png)
 
 In this small project you can play trailers of the Movies..,but we can provide regualar updates with more features and functionalities because the entertainment industry is one of the largest online service businesses. The number of people seeking online entertainment is increasing rapidly. Increased leisure time and easier access to entertainment is driving the market forward.
 
