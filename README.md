@@ -16,8 +16,8 @@ Sijeesh Miziha's Netflix Clone is bundled with remarkable features that are of t
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-  
-The entertainment industry is one of the largest online service businesses. The number of people seeking online entertainment is increasing rapidly. Increased leisure time and easier access to entertainment is driving the market forward.
+In this small project you can play trailers of the Movies..,but we can provide regualar updates with more features and functionalities because the entertainment industry is one of the largest online service businesses. The number of people seeking online entertainment is increasing rapidly. Increased leisure time and easier access to entertainment is driving the market forward.
+
 ## Tech Stack
 
   - **React,axios,CSS** 
