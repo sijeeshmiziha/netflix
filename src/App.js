@@ -18,7 +18,7 @@ function App() {
       <Banner />
       <RowPost title="Netflix Originals" api={originals} />
       <RowPost title="Action Movies" isSmall={true} api={actions} />
-      <RowPost title="Romantic Movies" isSmall={true} api={romance} />
+      <RowPost title="Romantic Movies" api={romance} />
       <RowPost title="Comedy Movies" isSmall={true} api={comedy} />
       <RowPost title="Horror Movies" isSmall={true} api={horror} />
     </div>
