@@ -14,7 +14,9 @@ Sijeesh Miziha's Netflix Clone is bundled with remarkable features that are of t
    
 
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![sijeeshmiziha-netflix-clone](https://user-images.githubusercontent.com/91063960/139377875-bec0798b-973e-4dc0-bab7-a745b7ba3bcf.png)
+![sijeeshmiziha-netflix-clone2](https://user-images.githubusercontent.com/91063960/139377889-6f5b23ac-4e9a-4674-b879-de472243599c.png)
+![sijeeshmiziha-netflix-clone3](https://user-images.githubusercontent.com/91063960/139377892-c501b7cf-cfcc-49be-948c-973e87cbda4b.png)
 
 In this small project you can play trailers of the Movies..,but we can provide regualar updates with more features and functionalities because the entertainment industry is one of the largest online service businesses. The number of people seeking online entertainment is increasing rapidly. Increased leisure time and easier access to entertainment is driving the market forward.
 
